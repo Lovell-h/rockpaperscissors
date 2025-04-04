@@ -1,12 +1,5 @@
 function getcomputerchoice(){
-    let x=0
-    console.log("before")
-    while (x=0)
-        {
-            ifMath.floor(Math.random()*3);
-            console.log(x);
-        }
-    console.log("after" + x)
-    
+    let x=getrandomint(1,3);
+    console.log(x);
     return x;
 }
