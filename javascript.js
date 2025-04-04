@@ -1,5 +1,5 @@
 function getcomputerchoice(){
-    let x=getrandomint(1,3);
+    let x=Math.floor(Math.random() * (3 - 2)) + 1;
     console.log("random number: "+ x);
     return x;
 }
