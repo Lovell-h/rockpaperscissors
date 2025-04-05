@@ -7,9 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-     <p id="results"></p>
-     <script>
-        document.getElementById("results").textcontext=getcomputerchoice();
-     </script>
-</body>
+    <h1> Rock/Paper/Scissors</h1>
+    <h2> Best of 5 rounds, make your choice and click "play round"</h2>
+    <h3> Good Luck</h3>
+    <fieldset>
+        <legend> Make your Choice:</legend>
+        <div>
+            <input type="radio" id="rock" name="user-choice" value="1" checked="true"/>
+            <label for="rock">Rock</label>
+        </div>
+        <div>
+            <input type="radio" id="paper" name="user-choice" value="2"/>
+            <label for="paper">Paper</label>
+        </div>
+        <div>
+            <input type="radio" id="scissor" name="user-choice" value="3"/>
+            <label for="scissor">Scissor</label>
+        </div>
+        <button onclick="playround()">Play Round!</button>
+        <button onclick="reload()">Reset</button>
+    </fieldset>
+    <h2> Results:</h2>
+        <p id="results[1]"></p>
+        <p id="results[2]"></p>
+        <p id="results[3]"></p>
+        <p id="results[4]"></p>
+        <p id="results[5]"></p>
+        <p id="final"></p>
+    </body>
 </html>
