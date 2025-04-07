@@ -3,7 +3,6 @@ let computerscore=0; //ongoing computer score
 let catscore=0; //ongoing tie score 
 let rounds=0; //current round number
 
-
 const buttons = document.querySelectorAll("button");
 
 //listen for user interaction
