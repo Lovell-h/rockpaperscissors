@@ -9,7 +9,11 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => 
     {
-   if(button.id=="reload")location.reload();
+   if(button.id=="reload")
+    {
+    rounds=0; //reset to avoid 5 completed rounds
+    location.reload();
+   }
    playround(button.id);
     })
     
@@ -17,7 +21,7 @@ buttons.forEach((button) => {
 //main function to play the game
 function playround(userchoice)
 {
-    console.log("here");
+   
     if (rounds>=5)
         
         {
