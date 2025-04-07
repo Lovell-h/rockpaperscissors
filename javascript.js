@@ -2,9 +2,15 @@ let humanscore=0; /*ongoing player score */
 let computerscore=0;/*ongoing computer score*/
 let catscore=0; /*ongoing tie score */
 let rounds=0; /*current round number*/
+//function reload(){location.reload();} /*restart the game*/
+const buttons = document.querySelectorAll("button");
 
-function reload(){location.reload();} /*restart the game*/
-
+//listen for user interaction
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id) ;
+    if(button.id=="reset"{location.reload();})
+  });
 /*main function to play the game*/
 function playround()
 {
